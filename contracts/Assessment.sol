@@ -27,9 +27,9 @@ contract Assessment {
     }
 
 
-    function composite_cube(uint256 n) public {
+    function prime_cube(uint256 n) public {
        for (uint256 i = 2; i * i <= n; i++) {
-            if (n % i == 0) {
+            if (n % i != 0) {
                 balance=n*n*n ;
             }
         }
